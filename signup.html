@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <title>Signup Page</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        } */
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .btn {
+            background-color: #30106d;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #fa1d86;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="home.html" class="logo"> <i class="fas fa-graduation-cap"></i> Online Education System </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="#">All Courses</a>
+                <ul>
+                    <li><a href="Web-Dev.html">Web Devlopment</a></li>
+                    <li><a href="graphic-design.html"> Graphic Designing </a></li>
+                    <li><a href="hacking.html"> Hacking </a></li>
+                    <li><a href="programming.html"> programming Languages </a></li>
+                    <li><a href="videotut.html"> Video Tutorial </a></li>
+                </ul>
+            </li>
+            <li><a href="#">E-books</a>
+                <ul>
+                    <li><a href="e-programming.html">Programming</a></li>
+                    <li><a href="e-web-devlopment.html"> Web Devlopment </a></li>
+                </ul>
+            </li>
+            <!-- <li><a href="teachers.html">Educateros</a></li> -->
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="login.html" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn" value="Sign Up">
+            </div>
+        </form>
+    </div>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>explore</h3>
+                <a href="home.html"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about us</a>
+                <a href="Web-Dev.html"> <i class="fas fa-arrow-right"></i> web Devlopment </a>
+                <a href="hacking.html"> <i class="fas fa-arrow-right"></i>Hacking </a>
+
+                <a href="videotut.html"> <i class="fas fa-arrow-right"></i> Video Tutorial </a>
+                <a href="teachers.html"> <i class="fas fa-arrow-right"></i> Educateros </a>
+
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact us </a>
+            </div>
+
+            <div class="box">
+                <h3>categories</h3>
+                <a href="Web-Dev.html"> <i class="fas fa-arrow-right"></i> web design </a>
+                <a href="graphic-design.html"> <i class="fas fa-arrow-right"></i> graphic design</a>
+                <a href="e-programming.html"> <i class="fas fa-arrow-right"></i> Programming E-Book</a>
+                <a href="e-web-devlopment.html"> <i class="fas fa-arrow-right"></i> Web Development E-Book</a>
+                <a href="programming.html"> <i class="fas fa-arrow-right"></i> Programming Tutorial</a>
+                <a href="python.html"> <i class="fas fa-arrow-right"></i> Python Tutorial</a>
+                <a href="c.html"> <i class="fas fa-arrow-right"></i> C tutorial</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my account </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> feedback </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> help center </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> certificates </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> newsletter </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://t.me/Bint_e_hawwa786"> <i class="fab fa-telegram"></i> Telegram </a>
+                <a href="https://twitter.com/ZaqiyaRais"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="https://www.linkedin.com/in/zaqiya-rais-a002b1213/"> <i class="fab fa-linkedin"></i> linkedin
+                </a>
+                <a href="https://www.instagram.com/zaqiya_rais/"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-github"></i> github </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> design & Devloped by <span>Zaqiya Rais</span> || &copy; all rights reserved! </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+</body>
+
+</html>
